@@ -6,10 +6,9 @@ SELECT
     MIN(cu.screen_time_before_sleep) AS min_night,
     MAX(cu.daily_social_media_hours) AS max_daily,
     MAX(cu.screen_time_before_sleep) AS max_night
-FROM comportamiento_uso cu;
+FROM comportamiento_uso AS cu;
 
 #El uso diario de redes sociales presenta una alta variabilidad, oscilando entre 1 y 8 horas, lo que indica la existencia de perfiles de uso muy distintos entre los adolescentes. En cambio, el uso antes de dormir es más limitado, con un rango entre 0.5 y 3 horas
-
 
 #2. Plataforma más usada antes de dormir. 
 SELECT cu.platform_usage,
